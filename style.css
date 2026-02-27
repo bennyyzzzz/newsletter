@@ -1,0 +1,131 @@
+/* theme white-black */
+
+:root {
+    --bg: #fff;
+    --text: #111;
+    --borders: #cccccc;
+    --box: #fcdcdc;
+    --action: #c22929;
+}
+
+[data-tema="dark"] {
+    --bg: #080808;
+    --text: #e2e2e2;
+    --borders: #181818;
+    --box: #160a0a;
+    --action: #c22929;    
+}
+
+/* general */
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: helvetica;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* header */
+
+.top {
+    border-bottom: 1px solid var(--borders);
+}
+
+.top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem 1rem;
+}
+
+/* content */
+
+.box {
+    border: .5rem;
+    padding: 2rem 1rem;
+    margin: 1.5rem 0;
+    border-radius: .5rem;
+    max-width: 80%;
+    margin: 1.5rem auto;
+    border: 1px solid var(--borders);
+    background-color: var(--box);
+}
+
+h1 {
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+/* form */
+
+form {
+    display: grid;
+    gap: .8rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: .7rem 9rem;
+    border: 1px solid var(--borders);
+    border-radius: .5rem;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.btn {
+    border: 1px solid var(--borders);
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: .8rem;
+    padding: .6rem .9em;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    max-width: 200px;
+}
+
+.btn.news {
+    margin-top: 1rem;
+    background-color: var(--action);
+    color: white;
+    transition: 0.2s;
+}
+
+.btn.news:hover {
+    margin-top: 1rem;
+    background-color: var(--box);
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+/* footer */
+
+.footer {
+    border-top: 1px solid var(--borders);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cb7280;
+    margin-top: auto;
+}

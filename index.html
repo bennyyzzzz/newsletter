@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Newsletter</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="top">
+        <div class="container">
+            <h1><strong>Newsletter</strong></h1>
+            <button class="btn" id="btnTheme">Swith Theme 🌓</button>
+        </div>
+    </header>
+
+    <!-- content -->
+    <main class="container">
+        <section class="box">
+            <h2>Subscribe</h2>
+            <p>Receive newest updates directly to your email inbox!</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Type your name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@email.com">
+                <button type="submit" class="btn news">Receive emails!</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <small>Newsletter <span id="year"></span></small>
+        </div>
+    </footer>
+</body>
+</html>
